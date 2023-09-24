@@ -9,8 +9,8 @@ import ballerina/constraint;
     //apart from these validations, Ballerina supports minValueExclusive: & maxValueExclusive:
     //constraints as well.
 }
-
 type Age int;
+//Float & Number (decimal) Constraints also can be added as above.
 
 type Student record {|
     @constraint:String{
@@ -28,7 +28,6 @@ type Student record {|
         maxLength: 10
         //apart from these validations, Array type supports length: constraint as well.
     }
-
     string[] subjects;
 |};
 
