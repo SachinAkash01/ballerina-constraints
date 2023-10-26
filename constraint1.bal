@@ -18,11 +18,9 @@ type Student record {|
         //Other than this, Ballerina supports maxLength:, minLength:, and length:
         //constraints as well.
     }
-
     string id;
     string name;
     Age age;
-
     @constraint:Array{
         minLength: 1,
         maxLength: 10
